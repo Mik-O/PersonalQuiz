@@ -13,6 +13,8 @@
 		DAFDA8A32677C08000323AE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFDA8A12677C08000323AE4 /* Main.storyboard */; };
 		DAFDA8A52677C09000323AE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFDA8A42677C09000323AE4 /* Assets.xcassets */; };
 		DAFDA8A82677C09000323AE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFDA8A62677C09000323AE4 /* LaunchScreen.storyboard */; };
+		DAFDA8B52677D34000323AE4 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFDA8B42677D34000323AE4 /* Question.swift */; };
+		DAFDA8B72677D72500323AE4 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFDA8B62677D72500323AE4 /* Answer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DAFDA8A42677C09000323AE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAFDA8A72677C09000323AE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAFDA8A92677C09000323AE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFDA8B42677D34000323AE4 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DAFDA8B62677D72500323AE4 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,57 @@
 		DAFDA89A2677C08000323AE4 /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				DAFDA89B2677C08000323AE4 /* AppDelegate.swift */,
-				DAFDA89D2677C08000323AE4 /* SceneDelegate.swift */,
-				DAFDA89F2677C08000323AE4 /* ViewController.swift */,
-				DAFDA8A12677C08000323AE4 /* Main.storyboard */,
-				DAFDA8A42677C09000323AE4 /* Assets.xcassets */,
-				DAFDA8A62677C09000323AE4 /* LaunchScreen.storyboard */,
-				DAFDA8A92677C09000323AE4 /* Info.plist */,
+				DAFDA8AF2677D01F00323AE4 /* ViewControllers */,
+				DAFDA8B32677D24800323AE4 /* Models */,
+				DAFDA8B02677D04D00323AE4 /* Storyboards */,
+				DAFDA8B12677D0C800323AE4 /* SupportingFiles */,
+				DAFDA8B22677D0E400323AE4 /* Resources */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		DAFDA8AF2677D01F00323AE4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDA89F2677C08000323AE4 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DAFDA8B02677D04D00323AE4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDA8A12677C08000323AE4 /* Main.storyboard */,
+				DAFDA8A62677C09000323AE4 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DAFDA8B12677D0C800323AE4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDA89B2677C08000323AE4 /* AppDelegate.swift */,
+				DAFDA89D2677C08000323AE4 /* SceneDelegate.swift */,
+				DAFDA8A92677C09000323AE4 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		DAFDA8B22677D0E400323AE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDA8A42677C09000323AE4 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DAFDA8B32677D24800323AE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAFDA8B42677D34000323AE4 /* Question.swift */,
+				DAFDA8B62677D72500323AE4 /* Answer.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +184,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAFDA8A02677C08000323AE4 /* ViewController.swift in Sources */,
+				DAFDA8B52677D34000323AE4 /* Question.swift in Sources */,
+				DAFDA8B72677D72500323AE4 /* Answer.swift in Sources */,
 				DAFDA89C2677C08000323AE4 /* AppDelegate.swift in Sources */,
 				DAFDA89E2677C08000323AE4 /* SceneDelegate.swift in Sources */,
 			);
@@ -287,7 +335,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +353,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
